@@ -38,22 +38,22 @@ const keys = computed(() => {
 .shortcut {
 	display: flex;
 	align-items: center;
-	gap: var(--spacing-4xs);
+	gap: var(--spacing--4xs);
 }
 .keyWrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: var(--border-radius-small);
+	border-radius: var(--radius--sm);
 	height: 18px;
 	min-width: 18px;
-	padding: 0 var(--spacing-4xs);
-	border: solid 1px var(--color-foreground-base);
-	background: var(--color-background-base);
+	padding: 0 var(--spacing--4xs);
+	border: solid 1px var(--n8n--kbd-border, var(--color--foreground));
+	background: var(--n8n--kbd-bg, var(--color--background));
 }
 
 .key {
-	color: var(--color-text-base);
-	font-size: var(--font-size-3xs);
+	color: var(--n8n--kbd-text, var(--color--text));
+	font-size: var(--font-size--3xs);
 }
 </style>
